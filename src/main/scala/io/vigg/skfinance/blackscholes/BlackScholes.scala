@@ -35,6 +35,15 @@ object BlackScholes {
     }
   }
 
+  /* Change in price with respect to volatility
+   *
+   * @param option the option type (put or call)
+   * @param s the starting price
+   * @param k the strike price
+   * @param T float maturity in fractions of year
+   * @param r risk free interest rate
+   * @param v the volalility / diffusion rate
+   * */
   def vega(s: Double, k: Double, T: Double, r: Double, v: Double): Double =
     s * Math.sqrt(T) *
       standard_normal.pdf(
