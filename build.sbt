@@ -7,6 +7,7 @@ lazy val skfinance = (project in file("."))
     name := "skfinance",
     libraryDependencies ++= Seq(
       "junit" % "junit" % "4.13.2" % Test,
-      "org.scalatest" %% "scalatest" % "3.2.11" % Test
+      "org.scalatest" %% "scalatest" % "3.2.11" % Test,
+      "org.scalanlp" %% "breeze" % "2.0"
     )
   )
